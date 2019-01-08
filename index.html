@@ -1,0 +1,49 @@
+<html>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+        
+                <link rel = "stylesheet" type = "text/css" href="style.css">   
+</head>
+
+<body>
+
+    <div id ="container">
+        
+        <form name = "login" id="login">
+
+            <h1>To DO </h1>
+           User Name  <input type="username" name = "txtUsername">
+           Password   <input type="password" name = "txtPassword">
+           <input type="button" onclick="check(this.form)" value="login"/>
+        
+        </form> 
+
+            <div id = "content"><h1>Please Enter User Name and Password</h1>
+                
+            </div>
+
+          
+        <script>
+               function check(form)
+							{
+
+								 if(form.txtUsername.value == "umer" && form.txtPassword.value == "2162")
+ 							 {
+   								 window.open('loggedIn.html')
+                                   
+  							}
+ 								else
+ 							{
+   								alert("Error Password or Username")
+ 							 }
+								}
+		</script>
+
+
+
+
+            <footer>here is footer</footer>
+    </div>
+</body>
+</html>
